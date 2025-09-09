@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+        "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
+        "https://checkstyle.org/dtds/configuration_1_3.dtd">
+
+<module name="Checker">
+    <property name="severity" value="warning"/>
+
+    <!-- File length -->
+    <module name="FileLength">
+        <property name="max" value="2000"/>
+    </module>
+
+    <!-- Line length -->
+    <module name="LineLength">
+        <property name="max" value="120"/>
+        <property name="ignorePattern" value="^package.*|^import.*"/>
+    </module>
+
+    <!-- No unused imports -->
+    <module name="UnusedImports"/>
+
+    <!-- Indentation -->
+    <module name="Indentation">
+        <property name="basicOffset" value="4"/>
+        <property name="braceAdjustment" value="0"/>
+        <property name="caseIndent" value="4"/>
+        <property name="throwsIndent" value="4"/>
+        <property name="lineWrappingIndentation" value="8"/>
+    </module>
+
+    <!-- Naming conventions -->
+    <module name="TreeWalker">
+        <module name="TypeName"/>
+        <module name="MethodName"/>
+        <module name="ParameterName"/>
+        <module name="LocalVariableName"/>
+        <module name="MemberName"/>
+        <module name="ConstantName"/>
+
+        <!-- Require Javadoc only for public classes/methods -->
+        <module name="JavadocType">
+            <property name="scope" value="public"/>
+        </module>
+        <module name="JavadocMethod">
+            <property name="scope" value="public"/>
+            <property name="allowMissingParamTags" value="true"/>
+            <property name="allowMissingThrowsTags" value="true"/>
+        </module>
+    </module>
+</module>
