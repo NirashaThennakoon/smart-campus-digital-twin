@@ -1,3 +1,6 @@
+
+![CI](https://github.com/NirashaThennakoon/smart-campus-digital-twin/actions/workflows/ci.yml/badge.svg)
+
 Smart Campus Digital Twin API
 
 A backend service built with Java 21 and Spring Boot to model a digital twin of a smart campus.
