@@ -6,6 +6,7 @@ import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")
 public interface BuildingMapper {
-    BuildingDto toDto(Building entity);
-    Building toEntity(BuildingDto dto);
+  BuildingDto toDto(Building entity);
+
+  Building toEntity(BuildingDto dto);
 }

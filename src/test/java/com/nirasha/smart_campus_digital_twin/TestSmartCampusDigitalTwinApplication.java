@@ -4,8 +4,9 @@ import org.springframework.boot.SpringApplication;
 
 public class TestSmartCampusDigitalTwinApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.from(SmartCampusDigitalTwinApplication::main).with(TestcontainersConfiguration.class).run(args);
-	}
-
+  public static void main(String[] args) {
+    SpringApplication.from(SmartCampusDigitalTwinApplication::main)
+        .with(TestcontainersConfiguration.class)
+        .run(args);
+  }
 }

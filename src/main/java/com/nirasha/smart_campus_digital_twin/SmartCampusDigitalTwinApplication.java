@@ -6,8 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SmartCampusDigitalTwinApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SmartCampusDigitalTwinApplication.class, args);
-	}
-
+  public static void main(String[] args) {
+    SpringApplication.run(SmartCampusDigitalTwinApplication.class, args);
+  }
 }
